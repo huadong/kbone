@@ -83,7 +83,7 @@ class Cookie {
                 httpOnly = true
                 break
             default:
-                if (pair.indexOf('=') > 0) {
+                if (!key && pair.indexOf('=') > 0) {
                     key = k
                     value = v
                 }
